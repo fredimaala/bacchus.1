@@ -1,0 +1,14 @@
+[
+  {
+    "productId": "1",
+    "bidderName": "qwe",
+    "bidAmount": 11,
+    "bidTimestamp": "2025-02-06T22:30:24.473Z"
+  },
+  {
+    "productId": "1",
+    "bidderName": "qwe",
+    "bidAmount": 11,
+    "bidTimestamp": "2025-02-06T22:31:08.507Z"
+  }
+]

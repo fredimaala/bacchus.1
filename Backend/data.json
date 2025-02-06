@@ -1,0 +1,352 @@
+[
+  {
+      "productId": "1",
+      "productName": "Vintage Wine",
+      "productDescription": "A unique and valuable vintage wine.",
+      "productCategory": "Decor",
+      "biddingEndDate": "2025-02-27T21:03:04.147647Z"
+  },
+  {
+      "productId": "2",
+      "productName": "Antique Vase",
+      "productDescription": "A unique and valuable antique vase.",
+      "productCategory": "Art",
+      "biddingEndDate": "2025-02-10T21:03:04.147647Z"
+  },
+  {
+      "productId": "3",
+      "productName": "Rare Coin Set",
+      "productDescription": "A unique and valuable rare coin set.",
+      "productCategory": "Collectibles",
+      "biddingEndDate": "2025-02-26T21:03:04.147647Z"
+  },
+  {
+      "productId": "4",
+      "productName": "Classic Guitar",
+      "productDescription": "A unique and valuable classic guitar.",
+      "productCategory": "Decor",
+      "biddingEndDate": "2025-02-14T21:03:04.147647Z"
+  },
+  {
+      "productId": "5",
+      "productName": "Signed Baseball",
+      "productDescription": "A unique and valuable signed baseball.",
+      "productCategory": "Books",
+      "biddingEndDate": "2025-02-26T21:03:04.147647Z"
+  },
+  {
+      "productId": "6",
+      "productName": "Gold Necklace",
+      "productDescription": "A unique and valuable gold necklace.",
+      "productCategory": "Jewelry",
+      "biddingEndDate": "2025-02-25T21:03:04.147647Z"
+  },
+  {
+      "productId": "7",
+      "productName": "Diamond Earrings",
+      "productDescription": "A unique and valuable diamond earrings.",
+      "productCategory": "Collectibles",
+      "biddingEndDate": "2025-02-19T21:03:04.147647Z"
+  },
+  {
+      "productId": "8",
+      "productName": "Handmade Persian Rug",
+      "productDescription": "A unique and valuable handmade persian rug.",
+      "productCategory": "Beverages",
+      "biddingEndDate": "2025-02-22T21:03:04.147647Z"
+  },
+  {
+      "productId": "9",
+      "productName": "Limited Edition Watch",
+      "productDescription": "A unique and valuable limited edition watch.",
+      "productCategory": "Collectibles",
+      "biddingEndDate": "2025-02-21T21:03:04.147647Z"
+  },
+  {
+      "productId": "10",
+      "productName": "Painting by Local Artist",
+      "productDescription": "A unique and valuable painting by local artist.",
+      "productCategory": "Books",
+      "biddingEndDate": "2025-02-21T21:03:04.147647Z"
+  },
+  {
+      "productId": "11",
+      "productName": "Retro Arcade Machine",
+      "productDescription": "A unique and valuable retro arcade machine.",
+      "productCategory": "Decor",
+      "biddingEndDate": "2025-02-25T21:03:04.147647Z"
+  },
+  {
+      "productId": "12",
+      "productName": "Signed Football Jersey",
+      "productDescription": "A unique and valuable signed football jersey.",
+      "productCategory": "Art",
+      "biddingEndDate": "2025-02-24T21:03:04.147647Z"
+  },
+  {
+      "productId": "13",
+      "productName": "Handcrafted Wooden Table",
+      "productDescription": "A unique and valuable handcrafted wooden table.",
+      "productCategory": "Collectibles",
+      "biddingEndDate": "2025-03-06T21:03:04.147647Z"
+  },
+  {
+      "productId": "14",
+      "productName": "Collector's Comic Book",
+      "productDescription": "A unique and valuable collector's comic book.",
+      "productCategory": "Collectibles",
+      "biddingEndDate": "2025-02-23T21:03:04.147647Z"
+  },
+  {
+      "productId": "15",
+      "productName": "Silver Tea Set",
+      "productDescription": "A unique and valuable silver tea set.",
+      "productCategory": "Toys",
+      "biddingEndDate": "2025-03-09T21:03:04.147647Z"
+  },
+  {
+      "productId": "16",
+      "productName": "Luxury Leather Handbag",
+      "productDescription": "A unique and valuable luxury leather handbag.",
+      "productCategory": "Decor",
+      "biddingEndDate": "2025-03-08T21:03:04.147647Z"
+  },
+  {
+      "productId": "17",
+      "productName": "Vintage Camera",
+      "productDescription": "A unique and valuable vintage camera.",
+      "productCategory": "Art",
+      "biddingEndDate": "2025-03-05T21:03:04.147647Z"
+  },
+  {
+      "productId": "18",
+      "productName": "Crystal Chandelier",
+      "productDescription": "A unique and valuable crystal chandelier.",
+      "productCategory": "Toys",
+      "biddingEndDate": "2025-03-02T21:03:04.147647Z"
+  },
+  {
+      "productId": "19",
+      "productName": "Exclusive Perfume Set",
+      "productDescription": "A unique and valuable exclusive perfume set.",
+      "productCategory": "Beverages",
+      "biddingEndDate": "2025-03-07T21:03:04.147647Z"
+  },
+  {
+      "productId": "20",
+      "productName": "Antique Pocket Watch",
+      "productDescription": "A unique and valuable antique pocket watch.",
+      "productCategory": "Toys",
+      "biddingEndDate": "2025-03-08T21:03:04.147647Z"
+  },
+  {
+      "productId": "21",
+      "productName": "First Edition Novel",
+      "productDescription": "A unique and valuable first edition novel.",
+      "productCategory": "Collectibles",
+      "biddingEndDate": "2025-02-11T21:03:04.147647Z"
+  },
+  {
+      "productId": "22",
+      "productName": "Rare Postage Stamps",
+      "productDescription": "A unique and valuable rare postage stamps.",
+      "productCategory": "Decor",
+      "biddingEndDate": "2025-02-28T21:03:04.147647Z"
+  },
+  {
+      "productId": "23",
+      "productName": "Bespoke Tailored Suit",
+      "productDescription": "A unique and valuable bespoke tailored suit.",
+      "productCategory": "Decor",
+      "biddingEndDate": "2025-02-19T21:03:04.147647Z"
+  },
+  {
+      "productId": "24",
+      "productName": "Fine China Dinnerware",
+      "productDescription": "A unique and valuable fine china dinnerware.",
+      "productCategory": "Clothing",
+      "biddingEndDate": "2025-02-08T21:03:04.147647Z"
+  },
+  {
+      "productId": "25",
+      "productName": "Luxury Fountain Pen",
+      "productDescription": "A unique and valuable luxury fountain pen.",
+      "productCategory": "Furniture",
+      "biddingEndDate": "2025-02-18T21:03:04.147647Z"
+  },
+  {
+      "productId": "26",
+      "productName": "Victorian Mirror",
+      "productDescription": "A unique and valuable victorian mirror.",
+      "productCategory": "Furniture",
+      "biddingEndDate": "2025-03-04T21:03:04.147647Z"
+  },
+  {
+      "productId": "27",
+      "productName": "Porcelain Doll Collection",
+      "productDescription": "A unique and valuable porcelain doll collection.",
+      "productCategory": "Beverages",
+      "biddingEndDate": "2025-02-16T21:03:04.147647Z"
+  },
+  {
+      "productId": "28",
+      "productName": "Authentic Samurai Sword",
+      "productDescription": "A unique and valuable authentic samurai sword.",
+      "productCategory": "Furniture",
+      "biddingEndDate": "2025-02-19T21:03:04.147647Z"
+  },
+  {
+      "productId": "29",
+      "productName": "Limited Edition Sneakers",
+      "productDescription": "A unique and valuable limited edition sneakers.",
+      "productCategory": "Beverages",
+      "biddingEndDate": "2025-03-01T21:03:04.147647Z"
+  },
+  {
+      "productId": "30",
+      "productName": "Handwoven Wool Blanket",
+      "productDescription": "A unique and valuable handwoven wool blanket.",
+      "productCategory": "Beverages",
+      "biddingEndDate": "2025-02-09T21:03:04.147647Z"
+  },
+  {
+      "productId": "31",
+      "productName": "Classic Car Miniature",
+      "productDescription": "A unique and valuable classic car miniature.",
+      "productCategory": "Decor",
+      "biddingEndDate": "2025-02-21T21:03:04.147647Z"
+  },
+  {
+      "productId": "32",
+      "productName": "Original Movie Poster",
+      "productDescription": "A unique and valuable original movie poster.",
+      "productCategory": "Electronics",
+      "biddingEndDate": "2025-02-25T21:03:04.147647Z"
+  },
+  {
+      "productId": "33",
+      "productName": "Historic Newspaper Collection",
+      "productDescription": "A unique and valuable historic newspaper collection.",
+      "productCategory": "Books",
+      "biddingEndDate": "2025-02-14T21:03:04.147647Z"
+  },
+  {
+      "productId": "34",
+      "productName": "Signed Music Album",
+      "productDescription": "A unique and valuable signed music album.",
+      "productCategory": "Jewelry",
+      "biddingEndDate": "2025-03-02T21:03:04.147647Z"
+  },
+  {
+      "productId": "35",
+      "productName": "Antique Bronze Statue",
+      "productDescription": "A unique and valuable antique bronze statue.",
+      "productCategory": "Books",
+      "biddingEndDate": "2025-02-27T21:03:04.147647Z"
+  },
+  {
+      "productId": "36",
+      "productName": "Hand-Carved Chess Set",
+      "productDescription": "A unique and valuable hand-carved chess set.",
+      "productCategory": "Collectibles",
+      "biddingEndDate": "2025-02-22T21:03:04.147647Z"
+  },
+  {
+      "productId": "37",
+      "productName": "Premium Whiskey Collection",
+      "productDescription": "A unique and valuable premium whiskey collection.",
+      "productCategory": "Toys",
+      "biddingEndDate": "2025-02-10T21:03:04.147647Z"
+  },
+  {
+      "productId": "38",
+      "productName": "Collector's Vinyl Record",
+      "productDescription": "A unique and valuable collector's vinyl record.",
+      "productCategory": "Collectibles",
+      "biddingEndDate": "2025-03-09T21:03:04.147647Z"
+  },
+  {
+      "productId": "39",
+      "productName": "Exclusive Silk Scarf",
+      "productDescription": "A unique and valuable exclusive silk scarf.",
+      "productCategory": "Jewelry",
+      "biddingEndDate": "2025-02-20T21:03:04.147647Z"
+  },
+  {
+      "productId": "40",
+      "productName": "Retro Typewriter",
+      "productDescription": "A unique and valuable retro typewriter.",
+      "productCategory": "Decor",
+      "biddingEndDate": "2025-02-28T21:03:04.147647Z"
+  },
+  {
+      "productId": "41",
+      "productName": "Bespoke Cigar Humidor",
+      "productDescription": "A unique and valuable bespoke cigar humidor.",
+      "productCategory": "Decor",
+      "biddingEndDate": "2025-03-05T21:03:04.147647Z"
+  },
+  {
+      "productId": "42",
+      "productName": "Glassblown Decorative Vase",
+      "productDescription": "A unique and valuable glassblown decorative vase.",
+      "productCategory": "Toys",
+      "biddingEndDate": "2025-02-27T21:03:04.147647Z"
+  },
+  {
+      "productId": "43",
+      "productName": "Gold-Plated Cutlery Set",
+      "productDescription": "A unique and valuable gold-plated cutlery set.",
+      "productCategory": "Jewelry",
+      "biddingEndDate": "2025-02-23T21:03:04.147647Z"
+  },
+  {
+      "productId": "44",
+      "productName": "Vintage Leather Suitcase",
+      "productDescription": "A unique and valuable vintage leather suitcase.",
+      "productCategory": "Clothing",
+      "biddingEndDate": "2025-02-28T21:03:04.147647Z"
+  },
+  {
+      "productId": "45",
+      "productName": "Fine Art Sculpture",
+      "productDescription": "A unique and valuable fine art sculpture.",
+      "productCategory": "Furniture",
+      "biddingEndDate": "2025-02-09T21:03:04.147647Z"
+  },
+  {
+      "productId": "46",
+      "productName": "Signed Poetry Manuscript",
+      "productDescription": "A unique and valuable signed poetry manuscript.",
+      "productCategory": "Furniture",
+      "biddingEndDate": "2025-03-05T21:03:04.147647Z"
+  },
+  {
+      "productId": "47",
+      "productName": "Handmade Ceramic Pottery",
+      "productDescription": "A unique and valuable handmade ceramic pottery.",
+      "productCategory": "Decor",
+      "biddingEndDate": "2025-03-08T21:03:04.147647Z"
+  },
+  {
+      "productId": "48",
+      "productName": "Luxury Travel Trunk",
+      "productDescription": "A unique and valuable luxury travel trunk.",
+      "productCategory": "Clothing",
+      "biddingEndDate": "2025-03-01T21:03:04.147647Z"
+  },
+  {
+      "productId": "49",
+      "productName": "Rare Gemstone Ring",
+      "productDescription": "A unique and valuable rare gemstone ring.",
+      "productCategory": "Decor",
+      "biddingEndDate": "2025-02-21T21:03:04.147647Z"
+  },
+  {
+      "productId": "50",
+      "productName": "Classic Porcelain Teapot",
+      "productDescription": "A unique and valuable classic porcelain teapot.",
+      "productCategory": "Electronics",
+      "biddingEndDate": "2025-02-26T21:03:04.147647Z"
+  }
+]
