@@ -7,7 +7,7 @@ const Category = () => {
 
   return (
     <div>
-      <h1>Kategooria: {category}</h1>
+      <h1>Category: {category}</h1>
       <AuctionList category={category} />
     </div>
   );

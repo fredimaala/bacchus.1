@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <h1>Welcome to Bacchus Auction</h1>
-      <p>Select a category from the menu or view all auctions below.</p>
+      <p1>Select a category from the menu or view all auctions below.</p1>
 
       {/* Auction List Component */}
       <AuctionList category={selectedCategory} />

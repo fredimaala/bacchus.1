@@ -10,5 +10,17 @@
     "bidderName": "qwe",
     "bidAmount": 11,
     "bidTimestamp": "2025-02-06T22:31:08.507Z"
+  },
+  {
+    "productId": "1",
+    "bidderName": "bid",
+    "bidAmount": 111,
+    "bidTimestamp": "2025-02-07T16:40:29.657Z"
+  },
+  {
+    "productId": "45",
+    "bidderName": "frr",
+    "bidAmount": 12,
+    "bidTimestamp": "2025-02-08T17:02:16.771Z"
   }
 ]

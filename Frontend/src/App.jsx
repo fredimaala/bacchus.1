@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar.jsx";
 import Home from "./pages/Home.jsx";
 import Category from "./pages/Category.jsx";
 
+
 const App = () => {
   return (
     <div>

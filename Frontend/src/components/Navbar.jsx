@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+
 const Navbar = () => {
   const [categories, setCategories] = useState([]);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
     const fetchCategories = async () => {
@@ -22,17 +24,34 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">All Auctions</Link>
-        </li>
-        {categories.map((category) => (
-          <li key={category}>
-            <Link to={`/category/${category}`}>{category}</Link>
-          </li>
-        ))}
-      </ul>
+    <nav className="navbar">
+      <div className="nav-container">
+        
+        <div className="nav-links">
+          <Link to="/" className="nav-link">All Auctions</Link>
+
+          {/* Dropdown Menu */}
+          <div
+            className="dropdown"
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+          >
+            <button className="dropdown-btn">Categories ▼</button>
+            {dropdownOpen && (
+              <div className="dropdown-menu">
+                {categories.map((category) => (
+                  <Link
+                    key={category}
+                    to={`/category/${category}`}
+                    className="dropdown-item"
+                  >
+                    {category}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
     </nav>
   );
 };

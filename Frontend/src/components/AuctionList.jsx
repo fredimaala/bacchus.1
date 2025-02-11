@@ -2,10 +2,13 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import BidForm from "./BidForm";
 
+
+
 const AuctionList = ({ category }) => {
   const [auctions, setAuctions] = useState([]);
   const [error, setError] = useState(null);
-  const [bids, setBids] = useState([]); // Store submitted bids
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
 
   useEffect(() => {
     const fetchAuctions = async () => {
@@ -15,7 +18,11 @@ const AuctionList = ({ category }) => {
           : "http://localhost:4000/auctions";
 
         const response = await axios.get(url);
-        setAuctions(response.data);
+        // Sort by soonest ending auction first
+        const sortedAuctions = response.data.sort(
+          (a, b) => new Date(a.biddingEndDate) - new Date(b.biddingEndDate)
+        );
+        setAuctions(sortedAuctions);
       } catch (err) {
         console.error("Error fetching auctions:", err);
         setError("Could not load auctions. Please try again later.");
@@ -25,7 +32,6 @@ const AuctionList = ({ category }) => {
     fetchAuctions();
   }, [category]);
 
-  
   const handleBidSubmit = async (productId, bidderName, bidAmount) => {
     try {
       await axios.post("http://localhost:4000/bids", {
@@ -39,15 +45,18 @@ const AuctionList = ({ category }) => {
       alert("Failed to submit bid. Please try again.");
     }
   };
-  
+
+  // Pagination Logic
+  const indexOfLastAuction = currentPage * itemsPerPage;
+  const indexOfFirstAuction = indexOfLastAuction - itemsPerPage;
+  const currentAuctions = auctions.slice(indexOfFirstAuction, indexOfLastAuction);
+  const totalPages = Math.ceil(auctions.length / itemsPerPage);
 
   return (
     <div>
       {error && <p style={{ color: "red" }}>{error}</p>}
-      {auctions.length === 0 && !error ? (
-        <p>No auctions available.</p>
-      ) : (
-        auctions.map((auction) => (
+      <div className="auction-container">
+        {currentAuctions.map((auction) => (
           <div key={auction.productId} className="auction-item">
             <h2>{auction.productName}</h2>
             <p>Category: {auction.productCategory}</p>
@@ -55,8 +64,21 @@ const AuctionList = ({ category }) => {
             <p>{auction.productDescription}</p>
             <BidForm productId={auction.productId} onBidSubmit={handleBidSubmit} />
           </div>
-        ))
-      )}
+        ))}
+      </div>
+
+      {/* Pagination Controls */}
+      <div className="pagination">
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index}
+            className={`page-button ${currentPage === index + 1 ? "active" : ""}`}
+            onClick={() => setCurrentPage(index + 1)}
+          >
+            {index + 1}
+          </button>
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const BidForm = ({ productId, onBidSubmit }) => {
   const [bidderName, setBidderName] = useState("");
   const [bidAmount, setBidAmount] = useState("");
@@ -16,7 +17,7 @@ const BidForm = ({ productId, onBidSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ marginTop: "10px" }}>
+    <form className="bid-form" onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Your Full Name"
