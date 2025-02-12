@@ -77,12 +77,12 @@
       "biddingEndDate": "2025-02-25T21:03:04.147647Z"
   },
   {
-      "productId": "12",
-      "productName": "Signed Football Jersey",
-      "productDescription": "A unique and valuable signed football jersey.",
-      "productCategory": "Art",
-      "biddingEndDate": "2025-02-24T21:03:04.147647Z"
-  },
+    "productId": "12",
+    "productName": "Signed Football Jersey",
+    "productDescription": "A unique and valuable signed football jersey.",
+    "productCategory": "Art",
+    "biddingEndDate": "2025-02-24T21:03:04.147647Z"
+},
   {
       "productId": "13",
       "productName": "Handcrafted Wooden Table",
@@ -112,12 +112,12 @@
       "biddingEndDate": "2025-03-08T21:03:04.147647Z"
   },
   {
-      "productId": "17",
-      "productName": "Vintage Camera",
-      "productDescription": "A unique and valuable vintage camera.",
-      "productCategory": "Art",
-      "biddingEndDate": "2025-03-05T21:03:04.147647Z"
-  },
+    "productId": "17",
+    "productName": "Vintage Camera",
+    "productDescription": "A unique and valuable vintage camera.",
+    "productCategory": "Art",
+    "biddingEndDate": "2025-03-05T21:03:04.147647Z"
+},
   {
       "productId": "18",
       "productName": "Crystal Chandelier",

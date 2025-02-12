@@ -2,13 +2,12 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import BidForm from "./BidForm";
 
-
-
 const AuctionList = ({ category }) => {
   const [auctions, setAuctions] = useState([]);
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
+  const [countdowns, setCountdowns] = useState({});
 
   useEffect(() => {
     const fetchAuctions = async () => {
@@ -31,6 +30,31 @@ const AuctionList = ({ category }) => {
 
     fetchAuctions();
   }, [category]);
+
+  useEffect(() => {
+    const updateCountdowns = () => {
+      const newCountdowns = {};
+      const filteredAuctions = auctions.filter((auction) => {
+        const timeLeft = new Date(auction.biddingEndDate) - new Date();
+        if (timeLeft > 0) {
+          const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+          newCountdowns[auction.productId] = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+          return true; // Keep auction
+        }
+        return false; // Remove expired auction
+      });
+
+      setCountdowns(newCountdowns);
+      setAuctions(filteredAuctions);
+    };
+
+    // Update countdowns every second
+    const interval = setInterval(updateCountdowns, 1000);
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, [auctions]);
 
   const handleBidSubmit = async (productId, bidderName, bidAmount) => {
     try {
@@ -56,29 +80,35 @@ const AuctionList = ({ category }) => {
     <div>
       {error && <p style={{ color: "red" }}>{error}</p>}
       <div className="auction-container">
-        {currentAuctions.map((auction) => (
-          <div key={auction.productId} className="auction-item">
-            <h2>{auction.productName}</h2>
-            <p>Category: {auction.productCategory}</p>
-            <p>Ends at: {new Date(auction.biddingEndDate).toLocaleString()}</p>
-            <p>{auction.productDescription}</p>
-            <BidForm productId={auction.productId} onBidSubmit={handleBidSubmit} />
-          </div>
-        ))}
+        {currentAuctions.length > 0 ? (
+          currentAuctions.map((auction) => (
+            <div key={auction.productId} className="auction-item">
+              <h2>{auction.productName}</h2>
+              <p>Category: {auction.productCategory}</p>
+              <p>Time Left: {countdowns[auction.productId] || "Calculating..."}</p>
+              <p>{auction.productDescription}</p>
+              <BidForm productId={auction.productId} onBidSubmit={handleBidSubmit} />
+            </div>
+          ))
+        ) : (
+          <p>No active auctions available.</p>
+        )}
       </div>
 
       {/* Pagination Controls */}
-      <div className="pagination">
-        {Array.from({ length: totalPages }, (_, index) => (
-          <button
-            key={index}
-            className={`page-button ${currentPage === index + 1 ? "active" : ""}`}
-            onClick={() => setCurrentPage(index + 1)}
-          >
-            {index + 1}
-          </button>
-        ))}
-      </div>
+      {totalPages > 1 && (
+        <div className="pagination">
+          {Array.from({ length: totalPages }, (_, index) => (
+            <button
+              key={index}
+              className={`page-button ${currentPage === index + 1 ? "active" : ""}`}
+              onClick={() => setCurrentPage(index + 1)}
+            >
+              {index + 1}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
